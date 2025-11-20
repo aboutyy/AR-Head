@@ -1,8 +1,8 @@
+
 import {
   FilesetResolver,
   FaceLandmarker,
-  HandLandmarker,
-  DrawingUtils
+  HandLandmarker
 } from '@mediapipe/tasks-vision';
 
 let faceLandmarker: FaceLandmarker | null = null;

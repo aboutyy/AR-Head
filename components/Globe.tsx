@@ -1,5 +1,5 @@
 
-import React, { useRef, useMemo, useState } from 'react';
+import React, { useRef, useMemo } from 'react';
 import { useFrame, useLoader, useThree } from '@react-three/fiber';
 import { PointMaterial, Line } from '@react-three/drei';
 import * as THREE from 'three';
@@ -84,7 +84,6 @@ export const Globe: React.FC<GlobeProps> = ({ trackingRef }) => {
   const groupRef = useRef<THREE.Group>(null);
   const earthCoreRef = useRef<THREE.Mesh>(null);
   const shaderRef = useRef<THREE.ShaderMaterial>(null);
-  const lineRef = useRef<any>(null);
   
   const earthMap = useLoader(THREE.TextureLoader, 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_specular_2048.jpg');
 

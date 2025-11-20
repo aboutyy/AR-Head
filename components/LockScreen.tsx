@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import { TrackingData } from '../types';
-import { Scan, Lock, Unlock, Fingerprint, AlertTriangle, ShieldCheck, UserCheck } from 'lucide-react';
+import { Scan, Lock, ShieldCheck, UserCheck } from 'lucide-react';
 
 interface LockScreenProps {
   trackingRef: React.MutableRefObject<TrackingData>;

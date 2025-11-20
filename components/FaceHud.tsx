@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import { TrackingData } from '../types';
-import { Activity, Battery, Wifi, Target, Cpu, Database, Hand, MoveHorizontal } from 'lucide-react';
+import { Activity, Battery, Target, Cpu, Hand, MoveHorizontal } from 'lucide-react';
 
 interface FaceHudProps {
   trackingRef: React.MutableRefObject<TrackingData>;
@@ -120,7 +120,7 @@ export const FaceHud: React.FC<FaceHudProps> = ({ trackingRef }) => {
           
           {/* Data Stream Visual */}
           <div className="flex gap-1 text-[8px] text-cyan-700 font-mono break-all leading-tight overflow-hidden h-8 opacity-70">
-             {Array.from({length: 100}).map((_, i) => Math.random() > 0.5 ? '1' : '0').join('')}
+             {Array.from({length: 100}).map(() => Math.random() > 0.5 ? '1' : '0').join('')}
           </div>
         </div>
       </div>
