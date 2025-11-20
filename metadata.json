@@ -1,0 +1,7 @@
+{
+  "name": "AR头显",
+  "description": "A Tony Stark inspired Augmented Reality Heads-Up Display featuring face tracking, hand gesture control, and holographic visualizations.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
